@@ -8,12 +8,11 @@ body {
 
 h1 {
     font-size: calc(1.6vw + 2.4vh);
-    max-font-size: 20pt;
     font-weight: 900;
     }
 
 h2 {
-    font-size: calc(1.4vw + 2.1vh);
+    font-size: calc(1.2vw + 1.8vh);
     font-weight: 500;
     }
 
