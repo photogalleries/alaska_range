@@ -4,6 +4,7 @@ body {
     background-color:#f4f9fc;
     color:#192943;
     text-align: center;
+    overflow: hidden;
     }
 
 h1 {
@@ -38,6 +39,7 @@ a {
     width: 100%;
     background-color:#f4f9fc;
     color:#192943;
+    z-index: 100;
     }
 
 
@@ -69,10 +71,6 @@ a {
     display: flex;
     text-align: center;
     align-items: center;
-    }
-
-
-.active {
     }
 
 
