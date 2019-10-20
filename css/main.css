@@ -7,17 +7,17 @@ body {
     }
 
 h1 {
-    font-size: 32pt;
+    font-size: calc(8px + 1.6vw + 1.6vh);
     font-weight: 900;
     }
 
 h2 {
-    font-size: 28pt;
+    font-size: calc(7px + 1.4vw + 1.4vh);
     font-weight: 500;
     }
 
 h3 {
-    font-size: 18pt;
+    font-size: calc(4.5px + 0.9vw + 0.9vh);
     font-weight: 500;
 }
 
