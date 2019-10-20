@@ -32,9 +32,8 @@ a {
 
 
 .menu-bar {
-    margin: 0;
-    padding: 0;
     position: fixed;
+    margin: 0;
     top: 0;
     width: 100%;
     background-color:#f4f9fc;
@@ -94,6 +93,10 @@ a {
 
 
 @media screen and (max-aspect-ratio: 1/1) {
+.menu-bar {
+    padding-top: 0.5vh;
+    position: relative;
+    }
 .menu-item-left {
     float: none;
     margin: auto;
