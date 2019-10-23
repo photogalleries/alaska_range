@@ -71,6 +71,8 @@ a {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    transform: translateY(calc(50vh - 50%));
     }
 
 
@@ -91,6 +93,9 @@ a {
 
 
 @media screen and (max-aspect-ratio: 1/1) {
+.gallery {
+    transform: translateY(calc(33vh - 50%));
+    }
 .menu-bar {
     padding-top: 0.5vh;
     position: relative;
@@ -107,7 +112,7 @@ a {
     margin: auto;
     margin-bottom: 0;
     padding-bottom 0;
-    padding-top: 0p;
+    padding-top: 0;
     padding-left: 50px;
     padding-right: 50px;
     visbility: hidden;
