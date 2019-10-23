@@ -3,7 +3,6 @@ body {
     font-family: 'Avenir', 'Arimo', 'sans-serif';
     background-color:#f4f9fc;
     color:#192943;
-    text-align: center;
     overflow: hidden;
     }
 
@@ -69,17 +68,19 @@ a {
 
 .gallery {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
     transform: translateY(calc(50vh - 50%));
+    }
+
+.gallery-item p {
+    text-align: center;
     }
 
 
 .gallery img {
     display:inline-block;
     float: center;
-    margin: 20px;
     max-height: 55vh;
     max-width: 95vw;
     }
