@@ -8,6 +8,9 @@
 
 <style>
 
+body {
+  overflow: visible;
+}
 
 .container {
   width: 100vw;
@@ -18,8 +21,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: calc(50vw - 500px);
-  margin-right: calc(50vw - 500px);
+  margin-left: calc(50% - 400px);
+  margin-right: calc(50% - 400px);
   transform: translateY(calc(50vh - 50%));
 }
 
@@ -50,59 +53,48 @@
   justify-content: center;
   text-align: center;
   color: #fff;
-  opacity: 0;
-}
-
-.text-wrapper:hover {
-  transition: all 0.8s ease;
   opacity: 1;
 }
+
 
 .name {
   font-size: calc(1.2vw + 1.8vh);
 }
 
 
-<--
-@media screen and (min-aspect-ratio: 5/2) {
-  body {
-    overflow:visible;
-    }
-  .gallery {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(25vh);
-    }
-
-  .gallery-item {
-    width: 120vh;
-    height: 80vh;
-    }
-  .gallery-item img {
-    width: 120vh;
-    height: 80vh;
-    }
-  .menu-bar {
-    position: relative;
-  }
-  .text-wrapper {
-    font-size: calc(0.8vw + 1.2vh);
-    justify-content: flex-end;
-  }
-  .name {
-    font-size: calc(1.2vw + 1.8vh);
-  }
+@media screen and (min-width: 1440px) {
+.gallery { 
+  margin-left: calc(25% - 40px);
+  margin-right: calc(25% - 40px);
 }
--->
+}
 
-@media screen and (max-aspect-ratio: 1/1) {
-  body {
-    overflow:visible;
+@media screen and (max-aspect-ratio: 1/1), screen and (max-width: 800px) {
+.menu-bar {
+    padding-top: 0.5vh;
+    position: relative;
+    }
+.menu-item-left {
+    float: none;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom 0;
+    }
+.menu-item-right {
+    top: 50px;
+    float: none;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom 0;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    visbility: hidden;
     }
   .gallery {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(0vh);
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateY(0vh);
     }
   .gallery-item {
     width: 80vw;
@@ -113,9 +105,6 @@
     width: 80vw;
     height: 53.333vw;
     }
-  .menu-bar {
-    position: relative;
-  }
   .text-wrapper {
     width: 80vw;
     height: 53.333vw;
