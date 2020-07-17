@@ -2,6 +2,7 @@
 <head>
 <title>The Alaska Range</title>
 <link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="stylesheet" href="swipebox/src/css/swipebox.css">
 <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
 </head>
 
@@ -42,25 +43,35 @@
     <div class="text-menu">
 
         <div class="gallery-item">
-            <a href="maps/1.jpg">
-                <h2> Alaska Mountain Ranges</h2>
+            <a href="maps/1.jpg" class="swipebox" title="Mountain Ranges of Alaska">
+                <h2>Alaska</h2>
             </a>
         </div>
 
         <div class="gallery-item">
-            <a href="https://www.nationalgeographic.com/content/dam/news/2016/11/16/atlas_design/01_atlas_design_maps.ngsversion.1479330037514.adapt.1900.1.jpg
-">
-                <h2>Denali and the Alaska Range <br>(external link)</h2>
+            <a href="maps/2.jpg" class="swipebox" title="Southcentral Alaska">
+                <h2>Southcentral Alaska</h2>
             </a>
         </div>
 
         <div class="gallery-item">
-            <a href="maps/2.jpg">
-                <h2> Southcentral Alaska</h2>
+            <a href="https://www.nationalgeographic.com/content/dam/news/2016/11/16/atlas_design/01_atlas_design_maps.ngsversion.1479330037514.adapt.1900.1.jpg">
+                <h2>Denali <br>(external link)</h2>
             </a>
         </div>
 
     </div>
+
+
+    <script src="swipebox/lib/jquery-2.1.0.min.js"></script>
+    <script src="swipebox/src/js/jquery.swipebox.js"></script>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        $( '.swipebox' ).swipebox();
+    });
+    </script>
+
  
 </body>
 
